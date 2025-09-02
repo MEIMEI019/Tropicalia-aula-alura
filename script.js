@@ -5,6 +5,10 @@ document.addEventListener ('DOMContentLoaded', function(){
     botaoDeAcessibilidade.addEventListener('click', function (){
         botaoDeAcessibilidade.classList.toggle('rotacao-botao');
         opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+
+        const botaoSelecionado - botaoDeAcessibilidade.getAtribute(`àrea-expanded`) --- `true`;
+        botaoDeAcessibilidade.setAtribute('aria-expanded', !boataoSelecionado)
+
     })
 
     const aumentaFonteBotao =document.getElementById('aumentar-fonte');
@@ -28,3 +32,12 @@ document.addEventListener ('DOMContentLoaded', function(){
 
 
 })
+
+alternaConstraste.addEventListener('click, function'(){
+    document.body.classList.toggle('alto constraste')
+})
+
+ScrollReveal().reveal('#inicio', { delay: 500 });
+ScrollReveal().reveal('#tropicalia', { delay: 500 });
+ScrollReveal().reveal('#galeria', { delay: 500 });
+ScrollReveal().reveal('#contato', { delay: 500 });

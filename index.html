@@ -23,13 +23,15 @@
             </ul>        
             <div id="acessibilidade" class="menu-acessiblidade">
                 <button id="botao-acessibilidade" class="btn btn-primary fw-bold 
-                botao-rotacao">acessibilidade</button>
+                botao-rotacao" aria-expanded="false">acessibilidade</button>
                 <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                <button id="aumetar-fonte"class="btn btn-primary fw-bold">A+</button>
-                <button id="diminuir-fonte"class="btn btn-primary fw-bold">A-</button>
-                <button id="alterna-contraste"class="btn btn-primary fw-bold"><i class=</button>
+                <button id="aumetar-fonte"class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho
+                 da fonte">A+</button>
+                <button id="diminuir-fonte"class="btn btn-primary fw-bold" aria-label="Diminur o tamanho da fonte">A-</button>
+                <button id="alterna-contraste"class="btn btn-primary fw-bold"><i class="bi 
+                    bi-shadows"></i></button>
               <div 
-        </nav>
+        nav>
        
     </header>
 
@@ -53,7 +55,8 @@
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seçao explicativa 
+        sobre a Tropicàlia">
             <div class="container d-flex align-items-center ">
                   <div class="col-5">
                     <h2>O que foi a Tropicália?</h2>
@@ -67,7 +70,7 @@
             </div>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
@@ -120,6 +123,7 @@
         <i class="bi bi-tiktok"></i>
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
 
 </body>
